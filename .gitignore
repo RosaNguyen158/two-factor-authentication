@@ -142,9 +142,3 @@ dist
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/node
-
-# Thư mục phụ thuộc
-
-node_modules/
-
-jspm_packages /
