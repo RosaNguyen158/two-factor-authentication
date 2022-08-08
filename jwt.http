@@ -1,0 +1,28 @@
+
+
+GET http://localhost:3000/app
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4iLCJpYXQiOjE2NTk2OTEzMjEsImV4cCI6MTY1OTY5MTM4MX0.Bs3T8LkdZIypWaDhR8TXOPefm3TaYGDMTrVvPQFD7dA
+###
+
+POST http://localhost:5000/loginApp
+Content-Type: application/json   
+
+{
+  "username": "John"
+}
+
+
+###
+POST http://localhost:5000/refreshToken
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4iLCJpYXQiOjE2NTk2ODcyMjJ9.nBUj0ILpgUwIUbNhq7uW9iJZ52TgEOvwC5FDdPr2rc8"
+}
+###
+POST http://localhost:5000/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4iLCJpYXQiOjE2NTk2ODcyMjJ9.nBUj0ILpgUwIUbNhq7uW9iJZ52TgEOvwC5FDdPr2rc8"
+}
